@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Gallery</title>
+  </head>
+  <body>
+    <div class="text"><h1>Photo Album</h1></div>
+    <div class="container">
+      <div class="gallery">
+        <div class="imgs">
+          <img src="./image/pexels-mohammed-ajwad-1120601.jpg" alt="img1" />
+        </div>
+        <div class="imgs">
+          <img
+            src="./image/pexels-eberhard-grossgasteiger-1366919.jpg"
+            alt="img2"
+          />
+        </div>
+        <div class="imgs">
+          <img src="./image/pexels-bao-dang-3700369.jpg" alt="img3" />
+        </div>
+        <div class="imgs">
+          <img
+            src="./image/pexels-eberhard-grossgasteiger-8388979.jpg"
+            alt="img4"
+          />
+        </div>
+        <div class="imgs">
+          <img src="./image/pexels-henry-&-co-1474157.jpg" alt="img5" />
+        </div>
+        <div class="imgs">
+          <img src="./image/pexels-joão-cabral-3288854.jpg" alt="img6" />
+        </div>
+        <div class="imgs">
+          <img src="./image/pexels-tyler-lastovich-733995.jpg" alt="img7" />
+        </div>
+        <div class="imgs">
+          <img src="./image/claire-brear-o8IHJtksEag-unsplash.jpg" alt="img8" />
+        </div>
+        <div class="imgs">
+          <img
+            src="./image/cezar-sampaio-JqY6nKmDHu0-unsplash.jpg"
+            alt="img9"
+          />
+        </div>
+        <div class="imgs">
+          <img src="./image/pexels-joão-cabral-3299386.jpg" alt="img10" />
+        </div>
+        <div class="imgs">
+          <img src="./image/pexels-olena-bohovyk-3646171.jpg" alt="img11" />
+        </div>
+        <div class="imgs">
+          <img
+            src="./image/mokhalad-musavi-9pqbZTdmmLA-unsplash.jpg"
+            alt="img12"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close">&#10006;</span>
+      <img class="modal-content" id="fullImage" />
+
+      <span class="prev" onclick="changeImage(-1)">
+        <svg
+          version="1.1"
+          id="_x32_"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 512 512"
+          xml:space="preserve"
+          fill="#000000"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <style type="text/css">
+              .st0 {
+                fill: #ffffff;
+              }
+            </style>
+            <g>
+              <polygon
+                class="st0"
+                points="277.919,132.921 154.839,256 277.919,379.072 318.552,338.438 236.122,256 318.552,173.562 "
+              ></polygon>
+              <path
+                class="st0"
+                d="M256.008,0C114.605,0.016,0.016,114.606,0,256c0.015,141.394,114.605,255.984,256.008,256 C397.394,511.984,511.983,397.394,512,256C511.983,114.606,397.394,0.016,256.008,0z M408.585,408.585 c-39.11,39.079-92.93,63.189-152.577,63.205c-59.655-0.016-113.483-24.126-152.594-63.205C64.328,369.475,40.217,315.647,40.21,256 c0.007-59.654,24.118-113.474,63.204-152.585c39.111-39.086,92.939-63.197,152.594-63.205 c59.646,0.008,113.466,24.119,152.577,63.205c39.079,39.11,63.197,92.93,63.205,152.585 C471.782,315.647,447.664,369.475,408.585,408.585z"
+              ></path>
+            </g>
+          </g>
+        </svg>
+      </span>
+      <!-- &#8701; -->
+      <span class="next" onclick="changeImage(1)">
+        <svg
+          version="1.1"
+          id="_x32_"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 512 512"
+          xml:space="preserve"
+          fill="#000000"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <style type="text/css">
+              .st0 {
+                fill: #ffffff;
+              }
+            </style>
+            <g>
+              <polygon
+                class="st0"
+                points="193.447,173.562 275.877,256 193.447,338.438 234.081,379.08 357.161,256 234.081,132.928 "
+              ></polygon>
+              <path
+                class="st0"
+                d="M255.992,0C114.606,0.015,0.015,114.606,0,256c0.015,141.394,114.606,255.984,255.992,256 C397.394,511.984,511.985,397.394,512,256C511.985,114.606,397.394,0.015,255.992,0z M408.585,408.585 c-39.118,39.079-92.938,63.189-152.593,63.205c-59.647-0.016-113.467-24.126-152.577-63.205 C64.328,369.474,40.218,315.647,40.21,256c0.008-59.655,24.118-113.475,63.205-152.585c39.11-39.087,92.93-63.197,152.577-63.205 c59.655,0.008,113.476,24.118,152.593,63.205c39.087,39.11,63.197,92.93,63.205,152.585 C471.782,315.647,447.672,369.474,408.585,408.585z"
+              ></path>
+            </g>
+          </g>
+        </svg>
+      </span>
+      <!-- &#8702; -->
+    </div>
+
+    <script src="./script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+  </body>
+</html>
